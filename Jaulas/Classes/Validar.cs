@@ -134,7 +134,7 @@ namespace Jaulas
             return Regex.IsMatch(smail, "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$");
         }
 
-        public static void numypun(KeyPressEventArgs e)
+        public static void NumerosPunto(KeyPressEventArgs e)
         {
             if (Char.IsDigit(e.KeyChar))
             {
