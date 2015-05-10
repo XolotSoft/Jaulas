@@ -18,14 +18,14 @@ namespace Jaulas
             tiempo.Enabled = true;
         }
         int i;
-        MDI mdi = new MDI();
+        Login login = new Login();
 
         private void tiempo_Tick(object sender, EventArgs e)
         {
             i += 2;
-            if(i==100)
+            if(i==50)
             {
-                mdi.Show();
+                login.Show();
                 this.Hide();
             }
         }
