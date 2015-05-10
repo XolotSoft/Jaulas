@@ -1,6 +1,6 @@
 ﻿namespace Jaulas
 {
-    partial class Form1
+    partial class MDI
     {
         /// <summary>
         /// Variable del diseñador requerida.
