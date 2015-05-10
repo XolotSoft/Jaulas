@@ -11,16 +11,18 @@ namespace Jaulas
     class Conexion
     {
         static string cadena = ConfigurationManager.ConnectionStrings["jaula"].ConnectionString;
-        static SqlConnection conectado = new SqlConnection(cadena);
+        static SqlConnection Conectado = new SqlConnection(cadena);
+
         public static SqlConnection conectar()
         {
-            conectado.Open();
-            return conectado;
+            Conectado.Open();
+            return Conectado;
         }
-        public static SqlConnection desconectar()
+
+        public static SqlConnection Desconectar()
         {
-            conectado.Close();
-            return conectado;
+            Conectado.Close();
+            return Conectado;
         }
     }
 }
