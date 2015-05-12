@@ -68,6 +68,12 @@
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Validar.cs" />
+    <Compile Include="Forms\Usuarios\UsuariosIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Usuarios\UsuariosIndex.Designer.cs">
+      <DependentUpon>UsuariosIndex.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +92,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Usuarios\UsuariosIndex.resx">
+      <DependentUpon>UsuariosIndex.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
