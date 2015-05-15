@@ -60,6 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Almacen\StockIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Almacen\StockIndex.Designer.cs">
+      <DependentUpon>StockIndex.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Conexion.cs" />
     <Compile Include="Forms\Inicio\Login.cs">
       <SubType>Form</SubType>
@@ -101,6 +107,9 @@
     <Compile Include="Forms\Usuarios\UsuarioEditar.Designer.cs">
       <DependentUpon>UsuarioEditar.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\Almacen\StockIndex.resx">
+      <DependentUpon>StockIndex.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Inicio\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +180,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
