@@ -10,23 +10,19 @@ using System.Windows.Forms;
 
 namespace Jaulas
 {
-    public partial class StockIndex : Form
+    public partial class MateriasIndex : Form
     {
-        public StockIndex()
+        public MateriasIndex()
         {
             InitializeComponent();
         }
-        private static StockIndex frmInst = null;
-        public static StockIndex Intancia()
+        private static MateriasIndex frmInst = null;
+        public static MateriasIndex Instancia()
         {
-            if (frmInst == null || frmInst.IsDisposed == true) frmInst = new StockIndex();
+            if (frmInst == null || frmInst.IsDisposed == true) frmInst = new MateriasIndex();
             frmInst.BringToFront();
             return frmInst;
         }
 
-        private void lblCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

@@ -44,16 +44,16 @@ namespace Jaulas
 
         private void materiasPrimasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //StockIndex index = null;
-            //index = StockIndex.Intancia();
-            //index.MdiParent = this;
-            //index.Show();
+            MateriasIndex index = null;
+            index = MateriasIndex.Instancia();
+            index.MdiParent = this;
+            index.Show();
         }
 
         private void stockToolStripMenuItem_Click(object sender, EventArgs e)
         {
             StockIndex index = null;
-            index = StockIndex.Intancia();
+            index = StockIndex.Instancia();
             index.MdiParent = this;
             index.Show();
         }
