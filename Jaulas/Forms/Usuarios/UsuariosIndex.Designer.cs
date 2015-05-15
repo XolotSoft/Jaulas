@@ -55,13 +55,14 @@
             // 
             this.lblCerrar.AutoSize = true;
             this.lblCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblCerrar.Font = new System.Drawing.Font("Coolvetica Rg", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCerrar.ForeColor = System.Drawing.Color.White;
             this.lblCerrar.Location = new System.Drawing.Point(648, 22);
             this.lblCerrar.Name = "lblCerrar";
-            this.lblCerrar.Size = new System.Drawing.Size(28, 29);
+            this.lblCerrar.Size = new System.Drawing.Size(31, 29);
             this.lblCerrar.TabIndex = 1;
             this.lblCerrar.Text = "X";
+            this.lblCerrar.Click += new System.EventHandler(this.lblCerrar_Click);
             // 
             // label1
             // 
@@ -101,6 +102,7 @@
             this.btnNuevo.TabIndex = 6;
             this.btnNuevo.Text = "NUEVO";
             this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // label2
             // 

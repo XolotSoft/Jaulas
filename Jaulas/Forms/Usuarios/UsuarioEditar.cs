@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Jaulas
 {
-    public partial class UsuariosNuevo : Form
+    public partial class UsuarioEditar : Form
     {
-        public UsuariosNuevo()
+        public UsuarioEditar()
         {
             InitializeComponent();
         }
-        private static UsuariosNuevo frmInst = null;
-        public static UsuariosNuevo Instancia()
+        private static UsuarioEditar frmInst = null;
+        public static UsuarioEditar Instancia()
         {
-            if (frmInst == null ||  frmInst.IsDisposed == true)frmInst = new UsuariosNuevo();
+            if (frmInst == null || frmInst.IsDisposed == true) frmInst = new UsuarioEditar();
             frmInst.BringToFront();
             return frmInst;
         }
