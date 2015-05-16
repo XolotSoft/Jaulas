@@ -24,5 +24,19 @@ namespace Jaulas
             return frmInst;
         }
 
+        private void lblCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            MateriasNuevo nuevo = null;
+            nuevo = MateriasNuevo.Instancia();
+            nuevo.MdiParent = MDI.ActiveForm;
+            nuevo.Show();
+            this.Close();
+        }
+
     }
 }

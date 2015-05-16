@@ -28,5 +28,14 @@ namespace Jaulas
         {
             this.Close();
         }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            StockNuevo nuevo = null;
+            nuevo = StockNuevo.Instancia();
+            nuevo.MdiParent = MDI.ActiveForm;
+            nuevo.Show();
+            this.Close();
+        }
     }
 }

@@ -75,6 +75,7 @@
             this.btnNuevo.TabIndex = 11;
             this.btnNuevo.Text = "NUEVO";
             this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // dgvProductos
             // 
