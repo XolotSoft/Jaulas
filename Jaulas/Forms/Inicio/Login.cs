@@ -34,13 +34,13 @@ namespace Jaulas
                 bd.buscar("SELECT * FROM usuarios WHERE username = '"+ userInput +"' AND password = '"+ passInput +"'");
                 if (bd.ds.Tables[0].Rows.Count > 0)
                 {
-                    tipo = Convert.ToString(bd.ds.Tables[0].Rows[0]["tipo"]);
-                    if (tipo == "Administrador")
+                    tipo = Convert.ToString(bd.ds.Tables[0].Rows[0]["rol_id"]);
+                    if (tipo == "1")
                     {
                         this.Hide();
                         mdiAdmin.Show();
                     }
-                    if (tipo == "Usuario")
+                    if (tipo == "2")
                     {
                         this.Hide();
                         mdiUser.Show();
@@ -64,6 +64,20 @@ namespace Jaulas
         private void lblCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void txbPass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.LetrasNumeros(e);
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                btnIngresar.PerformClick();
+            }
+        }
+
+        private void txbUser_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Validar.LetrasNumeros(e);
         }
     }
 }

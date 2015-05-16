@@ -19,10 +19,7 @@ namespace Jaulas
 
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UsuariosIndex index = null;
-            index = UsuariosIndex.Instncia();
-            index.MdiParent = this;
-            index.Show();
+            
         }
 
         private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,6 +53,16 @@ namespace Jaulas
             index = StockIndex.Instancia();
             index.MdiParent = this;
             index.Show();
+        }
+
+        private void usuariosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            UsuariosIndex index = null;
+            index = UsuariosIndex.Instncia();
+            index.MdiParent = this;
+            index.Show();
+            Form frm = this.MdiChildren.FirstOrDefault(x => x is UsuarioEditar || x is UsuariosNuevo);
+            if (frm != null) frm.Close();
         }
     }
 }

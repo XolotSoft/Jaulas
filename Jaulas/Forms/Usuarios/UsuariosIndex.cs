@@ -16,12 +16,25 @@ namespace Jaulas
         {
             InitializeComponent();
         }
+
         private static UsuariosIndex frmInst = null;
+
         public static UsuariosIndex Instncia()
         {
             if (frmInst == null || frmInst.IsDisposed == true) frmInst = new UsuariosIndex();
             frmInst.BringToFront();
             return frmInst;
+        }
+
+        private void UsuariosIndex_Load(object sender, EventArgs e)
+        {
+            BaseDatos bd = new BaseDatos();
+            bd.buscar("SELECT u.id, u.nombre AS Nombre , u.username AS Usuario, c.nombre AS Rol FROM usuarios u INNER JOIN catalogo c ON u.rol_id = c.id");
+            dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvUsuarios.RowHeadersVisible = false;
+            dgvUsuarios.DataSource = bd.ds.Tables[0];
+            dgvUsuarios.Columns["id"].Visible = false;
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -33,21 +46,36 @@ namespace Jaulas
             this.Close();
         }
 
+        private void dgvUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+            string id = Convert.ToString(dgvUsuarios.Rows[e.RowIndex].Cells[0].Value);
+            Variables.UsuarioId(id);
+            Editar();
+        }
+
+        private void dgvUsuarios_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                string id = Convert.ToString(dgvUsuarios.Rows[dgvUsuarios.CurrentRow.Index].Cells[0].Value);
+                Variables.UsuarioId(id);
+                Editar();
+            }
+        }
+
         private void lblCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void UsuariosIndex_Load(object sender, EventArgs e)
+        private void Editar()
         {
-            BaseDatos bd = new BaseDatos();
-            bd.buscar("SELECT id, nombre AS Nombre ,username AS Usuario, tipo AS Tipo FROM usuarios");
-            dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvUsuarios.RowHeadersVisible = false;
-            dgvUsuarios.DataSource = bd.ds.Tables[0];
-            dgvUsuarios.Columns["id"].Visible = false;
+            UsuarioEditar editar = null;
+            editar = UsuarioEditar.Instancia();
+            editar.MdiParent = MdiAdmin.ActiveForm;
+            editar.Show();
+            this.Close();
         }
-
     }
 }

@@ -86,6 +86,8 @@
             this.dgvUsuarios.ReadOnly = true;
             this.dgvUsuarios.Size = new System.Drawing.Size(623, 213);
             this.dgvUsuarios.TabIndex = 5;
+            this.dgvUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellClick);
+            this.dgvUsuarios.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dgvUsuarios_KeyPress);
             // 
             // btnNuevo
             // 
@@ -118,12 +120,13 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(33, 333);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(237, 16);
+            this.label3.Size = new System.Drawing.Size(341, 18);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Da click sobre un usuario para editarlo";
+            this.label3.Text = "Da click sobre un usuario para editarlo o eliminarlo";
             // 
             // UsuariosIndex
             // 
@@ -136,6 +139,7 @@
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dgvUsuarios);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);

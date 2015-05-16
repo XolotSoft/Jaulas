@@ -146,6 +146,7 @@
       <DependentUpon>StockEditar.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Vacio.cs" />
+    <Compile Include="Classes\Variables.cs" />
     <EmbeddedResource Include="Forms\Almacen\Materias Primas\MateriaEditar.resx">
       <DependentUpon>MateriaEditar.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Inicio\MdiAdmin.resx">
       <DependentUpon>MdiAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inicio\MdiUser.resx">
+      <DependentUpon>MdiUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Usuarios\UsuarioEditar.resx">
       <DependentUpon>UsuarioEditar.cs</DependentUpon>
@@ -216,6 +220,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>BD.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Alpha Dista Icon 81.png" />
+    <None Include="Resources\Alpha Dista Icon 18.png" />
+    <None Include="Resources\Alpha Dista Icon 20.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

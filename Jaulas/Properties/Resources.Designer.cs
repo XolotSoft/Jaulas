@@ -63,6 +63,36 @@ namespace Jaulas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Alpha_Dista_Icon_18 {
+            get {
+                object obj = ResourceManager.GetObject("Alpha Dista Icon 18", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Alpha_Dista_Icon_20 {
+            get {
+                object obj = ResourceManager.GetObject("Alpha Dista Icon 20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Alpha_Dista_Icon_81 {
+            get {
+                object obj = ResourceManager.GetObject("Alpha Dista Icon 81", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sps {
             get {
                 object obj = ResourceManager.GetObject("sps", resourceCulture);
