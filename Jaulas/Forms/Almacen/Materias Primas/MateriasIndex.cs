@@ -33,7 +33,7 @@ namespace Jaulas
         {
             MateriasNuevo nuevo = null;
             nuevo = MateriasNuevo.Instancia();
-            nuevo.MdiParent = MDI.ActiveForm;
+            nuevo.MdiParent = MdiAdmin.ActiveForm;
             nuevo.Show();
             this.Close();
         }

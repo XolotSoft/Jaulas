@@ -1,6 +1,6 @@
 ﻿namespace Jaulas
 {
-    partial class MDI
+    partial class MdiAdmin
     {
         /// <summary>
         /// Variable del diseñador requerida.

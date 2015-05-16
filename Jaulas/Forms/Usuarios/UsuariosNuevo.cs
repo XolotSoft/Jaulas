@@ -34,7 +34,7 @@ namespace Jaulas
         {
             UsuariosIndex index = null;
             index = UsuariosIndex.Instncia();
-            index.MdiParent = MDI.ActiveForm;
+            index.MdiParent = MdiAdmin.ActiveForm;
             index.Show();
             this.Close();
         }

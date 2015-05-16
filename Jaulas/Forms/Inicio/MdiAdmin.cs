@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Jaulas
 {
-    public partial class MDI : Form
+    public partial class MdiAdmin : Form
     {
-        public MDI()
+        public MdiAdmin()
         {
             InitializeComponent();
         }

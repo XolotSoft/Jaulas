@@ -33,7 +33,7 @@ namespace Jaulas
         {
             StockNuevo nuevo = null;
             nuevo = StockNuevo.Instancia();
-            nuevo.MdiParent = MDI.ActiveForm;
+            nuevo.MdiParent = MdiAdmin.ActiveForm;
             nuevo.Show();
             this.Close();
         }

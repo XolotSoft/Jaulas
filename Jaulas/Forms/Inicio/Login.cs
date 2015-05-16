@@ -18,10 +18,9 @@ namespace Jaulas
         }
 
         string userInput, passInput;
-        string userStored = "admin";
-        string passStored = "admin";
-
-        MDI mdi = new MDI();
+        MdiAdmin mdiAdmin = new MdiAdmin();
+        MdiUser mdiUser = new MdiUser();
+        BaseDatos bd = new BaseDatos();
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
@@ -29,11 +28,19 @@ namespace Jaulas
             passInput = txbPass.Text;
             if (Vacio.txb(this))
             {
-                if (userInput == userStored && passInput == passStored)
+                bd.buscar("SELECT * FROM ususarios WHERE username = '"+ userInput +"' && password = '"+ passInput +"'");
+                if (bd.ds.Tables[0].Rows.Count > 0)
                 {
-                    this.Hide();
-                    MDI mdi = new MDI();
-                    mdi.Show();
+                    if (bd.ds.Tables[0].Rows[0]["tipo"] == "Administrador")
+                    {
+                        this.Hide();
+                        mdiAdmin.Show();
+                    }
+                    if (bd.ds.Tables[0].Rows[0]["tipo"] == "Usuario")
+                    {
+                        this.Hide();
+                        mdiUser.Show();
+                    }                   
                 }
                 else
                 {

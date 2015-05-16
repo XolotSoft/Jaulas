@@ -28,7 +28,7 @@ namespace Jaulas
         {
             UsuariosNuevo nuevo = null;
             nuevo = UsuariosNuevo.Instancia();
-            nuevo.MdiParent = MDI.ActiveForm;
+            nuevo.MdiParent = MdiAdmin.ActiveForm;
             nuevo.Show();
             this.Close();
         }
