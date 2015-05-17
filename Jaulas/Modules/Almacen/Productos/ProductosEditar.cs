@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Jaulas
 {
-    public partial class StockEditar : Form
+    public partial class ProductosEditar : Form
     {
-        public StockEditar()
+        public ProductosEditar()
         {
             InitializeComponent();
         }

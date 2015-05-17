@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Jaulas
 {
-    public partial class MateriasIndex : Form
+    public partial class MateriasPrimasIndex : Form
     {
-        public MateriasIndex()
+        public MateriasPrimasIndex()
         {
             InitializeComponent();
         }
-        private static MateriasIndex frmInst = null;
-        public static MateriasIndex Instancia()
+        private static MateriasPrimasIndex frmInst = null;
+        public static MateriasPrimasIndex Instancia()
         {
-            if (frmInst == null || frmInst.IsDisposed == true) frmInst = new MateriasIndex();
+            if (frmInst == null || frmInst.IsDisposed == true) frmInst = new MateriasPrimasIndex();
             frmInst.BringToFront();
             return frmInst;
         }
@@ -31,8 +31,8 @@ namespace Jaulas
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            MateriasNuevo nuevo = null;
-            nuevo = MateriasNuevo.Instancia();
+            MateriasPrimasNuevo nuevo = null;
+            nuevo = MateriasPrimasNuevo.Instancia();
             nuevo.MdiParent = MdiAdmin.ActiveForm;
             nuevo.Show();
             this.Close();

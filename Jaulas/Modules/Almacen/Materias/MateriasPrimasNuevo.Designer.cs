@@ -1,6 +1,6 @@
 ﻿namespace Jaulas
 {
-    partial class StockNuevo
+    partial class MateriasPrimasNuevo
     {
         /// <summary>
         /// Required designer variable.
@@ -57,31 +57,31 @@
             // 
             // btnCrear
             // 
-            this.btnCrear.BackColor = System.Drawing.Color.Blue;
+            this.btnCrear.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCrear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCrear.FlatAppearance.BorderSize = 0;
             this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCrear.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrear.ForeColor = System.Drawing.Color.White;
-            this.btnCrear.Location = new System.Drawing.Point(538, 333);
+            this.btnCrear.Location = new System.Drawing.Point(538, 334);
             this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(121, 40);
-            this.btnCrear.TabIndex = 16;
+            this.btnCrear.TabIndex = 21;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Blue;
+            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.lblCerrar);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-5, -4);
+            this.panel1.Location = new System.Drawing.Point(-5, -3);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(710, 77);
-            this.panel1.TabIndex = 14;
+            this.panel1.TabIndex = 19;
             // 
             // lblCerrar
             // 
@@ -103,9 +103,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(24, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 25);
+            this.label1.Size = new System.Drawing.Size(213, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nuevo Stock";
+            this.label1.Text = "Nueva Materia Prima";
             // 
             // label6
             // 
@@ -115,7 +115,7 @@
             this.label6.Location = new System.Drawing.Point(383, 172);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 18);
-            this.label6.TabIndex = 26;
+            this.label6.TabIndex = 31;
             this.label6.Text = "Confirmar";
             // 
             // label5
@@ -126,7 +126,7 @@
             this.label5.Location = new System.Drawing.Point(383, 105);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 18);
-            this.label5.TabIndex = 25;
+            this.label5.TabIndex = 30;
             this.label5.Text = "Contraseña";
             // 
             // label4
@@ -137,7 +137,7 @@
             this.label4.Location = new System.Drawing.Point(97, 241);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 18);
-            this.label4.TabIndex = 24;
+            this.label4.TabIndex = 29;
             this.label4.Text = "Tipo";
             // 
             // label2
@@ -148,7 +148,7 @@
             this.label2.Location = new System.Drawing.Point(97, 172);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 18);
-            this.label2.TabIndex = 23;
+            this.label2.TabIndex = 28;
             this.label2.Text = "Usuario";
             // 
             // label3
@@ -159,7 +159,7 @@
             this.label3.Location = new System.Drawing.Point(97, 105);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 18);
-            this.label3.TabIndex = 22;
+            this.label3.TabIndex = 27;
             this.label3.Text = "Nombre";
             // 
             // panel6
@@ -169,7 +169,7 @@
             this.panel6.Location = new System.Drawing.Point(100, 262);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(218, 34);
-            this.panel6.TabIndex = 18;
+            this.panel6.TabIndex = 23;
             // 
             // comboBox1
             // 
@@ -186,7 +186,7 @@
             this.panel5.Location = new System.Drawing.Point(386, 193);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(218, 34);
-            this.panel5.TabIndex = 19;
+            this.panel5.TabIndex = 24;
             // 
             // textBox3
             // 
@@ -207,7 +207,7 @@
             this.panel4.Location = new System.Drawing.Point(386, 126);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(218, 34);
-            this.panel4.TabIndex = 20;
+            this.panel4.TabIndex = 25;
             // 
             // textBox2
             // 
@@ -228,7 +228,7 @@
             this.panel2.Location = new System.Drawing.Point(100, 193);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(218, 34);
-            this.panel2.TabIndex = 21;
+            this.panel2.TabIndex = 26;
             // 
             // textBox1
             // 
@@ -249,7 +249,7 @@
             this.panel3.Location = new System.Drawing.Point(100, 126);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(218, 34);
-            this.panel3.TabIndex = 17;
+            this.panel3.TabIndex = 22;
             // 
             // txbPass
             // 
@@ -263,7 +263,7 @@
             this.txbPass.Size = new System.Drawing.Size(209, 26);
             this.txbPass.TabIndex = 1;
             // 
-            // StockNuevo
+            // MateriasNuevo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -283,10 +283,10 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "StockNuevo";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "MateriasNuevo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "StockNuevo";
+            this.Text = "MateriasNuevo";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel6.ResumeLayout(false);

@@ -41,16 +41,16 @@ namespace Jaulas
 
         private void materiasPrimasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MateriasIndex index = null;
-            index = MateriasIndex.Instancia();
+            MateriasPrimasIndex index = null;
+            index = MateriasPrimasIndex.Instancia();
             index.MdiParent = this;
             index.Show();
         }
 
         private void stockToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StockIndex index = null;
-            index = StockIndex.Instancia();
+            ProductosIndex index = null;
+            index = ProductosIndex.Instancia();
             index.MdiParent = this;
             index.Show();
         }
@@ -62,6 +62,16 @@ namespace Jaulas
             index.MdiParent = this;
             index.Show();
             Form frm = this.MdiChildren.FirstOrDefault(x => x is UsuarioEditar || x is UsuariosNuevo);
+            if (frm != null) frm.Close();
+        }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EmpleadoIndex index = null;
+            index = EmpleadoIndex.Instancia();
+            index.MdiParent = this;
+            index.Show();
+            Form frm = this.MdiChildren.FirstOrDefault(x => x is EmpleadoEditar || x is EmpleadoNuevo);
             if (frm != null) frm.Close();
         }
     }

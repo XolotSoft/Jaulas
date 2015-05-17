@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace Jaulas
 {
-    public partial class MateriasNuevo : Form
+    public partial class MateriasPrimasEditar : Form
     {
-        public MateriasNuevo()
+        public MateriasPrimasEditar()
         {
             InitializeComponent();
         }
-        private static MateriasNuevo frmInst = null;
-        public static MateriasNuevo Instancia()
+        private static MateriasPrimasEditar frmInst = null;
+        public static MateriasPrimasEditar Instancia()
         {
-            if (frmInst == null || frmInst.IsDisposed == true) frmInst = new MateriasNuevo();
+            if (frmInst == null || frmInst.IsDisposed == true) frmInst = new MateriasPrimasEditar();
             frmInst.BringToFront();
             return frmInst;
         }
 
-        private void lblCerrar_Click(object sender, EventArgs e)
+        private void btnEditar_Click(object sender, EventArgs e)
         {
-            this.Close();
+
         }
     }
 }

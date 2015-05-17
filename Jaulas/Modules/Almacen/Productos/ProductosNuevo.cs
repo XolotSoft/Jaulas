@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Jaulas
 {
-    public partial class StockNuevo : Form
+    public partial class ProductosNuevo : Form
     {
-        public StockNuevo()
+        public ProductosNuevo()
         {
             InitializeComponent();
         }
-        private static StockNuevo frmInst = null;
-        public static StockNuevo Instancia()
+        private static ProductosNuevo frmInst = null;
+        public static ProductosNuevo Instancia()
         {
-            if (frmInst == null || frmInst.IsDisposed == true) frmInst = new StockNuevo();
+            if (frmInst == null || frmInst.IsDisposed == true) frmInst = new ProductosNuevo();
             frmInst.BringToFront();
             return frmInst;
         }
