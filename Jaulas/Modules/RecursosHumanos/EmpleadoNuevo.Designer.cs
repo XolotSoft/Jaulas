@@ -51,16 +51,17 @@
             this.btnRegresar.BackColor = System.Drawing.Color.DarkViolet;
             this.btnRegresar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
             this.btnRegresar.Location = new System.Drawing.Point(423, 331);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(121, 40);
-            this.btnRegresar.TabIndex = 22;
+            this.btnRegresar.TabIndex = 6;
             this.btnRegresar.Text = "REGRESAR";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // txbPaterno
             // 
@@ -69,9 +70,11 @@
             this.txbPaterno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbPaterno.Location = new System.Drawing.Point(98, 213);
             this.txbPaterno.Margin = new System.Windows.Forms.Padding(4);
+            this.txbPaterno.MaxLength = 30;
             this.txbPaterno.Name = "txbPaterno";
             this.txbPaterno.Size = new System.Drawing.Size(209, 26);
-            this.txbPaterno.TabIndex = 18;
+            this.txbPaterno.TabIndex = 1;
+            this.txbPaterno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPaterno_KeyPress);
             // 
             // txbNombre
             // 
@@ -80,9 +83,11 @@
             this.txbNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbNombre.Location = new System.Drawing.Point(98, 146);
             this.txbNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txbNombre.MaxLength = 30;
             this.txbNombre.Name = "txbNombre";
             this.txbNombre.Size = new System.Drawing.Size(209, 26);
-            this.txbNombre.TabIndex = 19;
+            this.txbNombre.TabIndex = 0;
+            this.txbNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbNombre_KeyPress);
             // 
             // label6
             // 
@@ -144,16 +149,17 @@
             this.btnCrear.BackColor = System.Drawing.Color.DarkViolet;
             this.btnCrear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCrear.FlatAppearance.BorderSize = 0;
-            this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrear.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrear.ForeColor = System.Drawing.Color.White;
             this.btnCrear.Location = new System.Drawing.Point(552, 331);
             this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(121, 40);
-            this.btnCrear.TabIndex = 21;
+            this.btnCrear.TabIndex = 5;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // panel1
             // 
@@ -178,6 +184,7 @@
             this.lblCerrar.Size = new System.Drawing.Size(31, 29);
             this.lblCerrar.TabIndex = 1;
             this.lblCerrar.Text = "X";
+            this.lblCerrar.Click += new System.EventHandler(this.lblCerrar_Click);
             // 
             // label1
             // 
@@ -195,22 +202,25 @@
             this.dtpIngreso.Location = new System.Drawing.Point(384, 146);
             this.dtpIngreso.Name = "dtpIngreso";
             this.dtpIngreso.Size = new System.Drawing.Size(209, 22);
-            this.dtpIngreso.TabIndex = 28;
+            this.dtpIngreso.TabIndex = 3;
             // 
             // cmbArea
             // 
+            this.cmbArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbArea.FormattingEnabled = true;
             this.cmbArea.Location = new System.Drawing.Point(384, 215);
             this.cmbArea.Name = "cmbArea";
             this.cmbArea.Size = new System.Drawing.Size(209, 24);
-            this.cmbArea.TabIndex = 29;
+            this.cmbArea.TabIndex = 4;
             // 
             // txbMaterno
             // 
             this.txbMaterno.Location = new System.Drawing.Point(98, 282);
+            this.txbMaterno.MaxLength = 30;
             this.txbMaterno.Name = "txbMaterno";
             this.txbMaterno.Size = new System.Drawing.Size(209, 22);
-            this.txbMaterno.TabIndex = 30;
+            this.txbMaterno.TabIndex = 2;
+            this.txbMaterno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbMaterno_KeyPress);
             // 
             // EmpleadoNuevo
             // 
@@ -233,10 +243,11 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EmpleadoNuevo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmpleadoNuevo";
+            this.Load += new System.EventHandler(this.EmpleadoNuevo_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

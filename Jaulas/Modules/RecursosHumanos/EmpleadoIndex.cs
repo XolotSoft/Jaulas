@@ -29,7 +29,7 @@ namespace Jaulas
         private void EmpleadoIndex_Load(object sender, EventArgs e)
         {
             BaseDatos bd = new BaseDatos();
-            string sql = "SELECT * FROM empleados e INNER JOIN ctatalogo c WHERE e.area_id = c.id";
+            string sql = "SELECT e.id, e.nombre AS Nombre, e.paterno AS 'Ap. Paterno', e.materno AS 'Ap. Materno', e.ingreso AS Ingreso, c.nombre AS Area FROM empleados e INNER JOIN catalogo c ON e.area_id = c.id";
             bd.buscar(sql);
             dgvEmpleados.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvEmpleados.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -60,7 +60,7 @@ namespace Jaulas
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 string id = Convert.ToString(dgvEmpleados.Rows[dgvEmpleados.CurrentRow.Index].Cells[0].Value);
-                Variables.UsuarioId(id);
+                Variables.EmpleadoId(id);
                 Editar();
             }
         }

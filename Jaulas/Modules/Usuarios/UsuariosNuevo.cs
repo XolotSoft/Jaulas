@@ -75,7 +75,7 @@ namespace Jaulas
                     MessageBox.Show("Las Contraseñas no coinciden", "Atención",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-        }
+            }
             else
             {
                 MessageBox.Show("Debes de llenar todos los campos", "Atención",
