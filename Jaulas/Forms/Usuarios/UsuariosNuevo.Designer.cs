@@ -106,6 +106,7 @@
             this.btnCrear.TabIndex = 7;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // panel3
             // 

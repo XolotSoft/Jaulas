@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\BaseDatos.cs" />
     <Compile Include="Forms\Almacen\Stock\StockIndex.cs">
       <SubType>Form</SubType>
     </Compile>

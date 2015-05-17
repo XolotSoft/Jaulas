@@ -16,6 +16,7 @@ namespace Jaulas
         {
             InitializeComponent();
         }
+        private BaseDatos bd = new BaseDatos();
         private static UsuariosNuevo frmInst = null;
         public static UsuariosNuevo Instancia()
         {
@@ -27,6 +28,10 @@ namespace Jaulas
         private void lblCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnCrear_Click(object sender, EventArgs e)
+        {
         }
     }
 }
