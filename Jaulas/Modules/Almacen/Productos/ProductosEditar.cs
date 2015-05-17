@@ -17,6 +17,16 @@ namespace Jaulas
             InitializeComponent();
         }
 
+        private static ProductosEditar frmInst = null;
+
+        public static ProductosEditar Instancia()
+        {
+            if (frmInst == null || frmInst.IsDisposed == true) frmInst = new ProductosEditar();
+            frmInst.BringToFront();
+            return frmInst;
+        }
+
+
         private void lblCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
