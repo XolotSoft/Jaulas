@@ -31,18 +31,17 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.almacenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.materiasPrimasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.producciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.rECURSOSHUMANOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ventanasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.almacenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.materiasPrimasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.producciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rECURSOSHUMANOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.empleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ventanasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,62 +81,6 @@
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.inicioToolStripMenuItem.Text = "INICIO";
             // 
-            // almacenToolStripMenuItem
-            // 
-            this.almacenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.stockToolStripMenuItem,
-            this.materiasPrimasToolStripMenuItem,
-            this.productosToolStripMenuItem});
-            this.almacenToolStripMenuItem.Name = "almacenToolStripMenuItem";
-            this.almacenToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.almacenToolStripMenuItem.Text = "ALMACEN";
-            // 
-            // stockToolStripMenuItem
-            // 
-            this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
-            this.stockToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.stockToolStripMenuItem.Text = "Stock";
-            this.stockToolStripMenuItem.Click += new System.EventHandler(this.stockToolStripMenuItem_Click);
-            // 
-            // materiasPrimasToolStripMenuItem
-            // 
-            this.materiasPrimasToolStripMenuItem.Name = "materiasPrimasToolStripMenuItem";
-            this.materiasPrimasToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.materiasPrimasToolStripMenuItem.Text = "Materias Primas";
-            this.materiasPrimasToolStripMenuItem.Click += new System.EventHandler(this.materiasPrimasToolStripMenuItem_Click);
-            // 
-            // producciónToolStripMenuItem
-            // 
-            this.producciónToolStripMenuItem.Name = "producciónToolStripMenuItem";
-            this.producciónToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
-            this.producciónToolStripMenuItem.Text = "PRODUCCIÓN";
-            // 
-            // rECURSOSHUMANOSToolStripMenuItem
-            // 
-            this.rECURSOSHUMANOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.empleadosToolStripMenuItem});
-            this.rECURSOSHUMANOSToolStripMenuItem.Name = "rECURSOSHUMANOSToolStripMenuItem";
-            this.rECURSOSHUMANOSToolStripMenuItem.Size = new System.Drawing.Size(139, 20);
-            this.rECURSOSHUMANOSToolStripMenuItem.Text = "RECURSOS HUMANOS";
-            // 
-            // ventasToolStripMenuItem
-            // 
-            this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.ventasToolStripMenuItem.Text = "VENTAS";
-            // 
-            // ventanasToolStripMenuItem
-            // 
-            this.ventanasToolStripMenuItem.Name = "ventanasToolStripMenuItem";
-            this.ventanasToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
-            this.ventanasToolStripMenuItem.Text = "VENTANAS";
-            // 
-            // productosToolStripMenuItem
-            // 
-            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.productosToolStripMenuItem.Text = "Productos";
-            // 
             // usuariosToolStripMenuItem1
             // 
             this.usuariosToolStripMenuItem1.Image = global::Jaulas.Properties.Resources.Alpha_Dista_Icon_81;
@@ -162,12 +105,61 @@
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
+            // almacenToolStripMenuItem
+            // 
+            this.almacenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.materiasPrimasToolStripMenuItem,
+            this.productosToolStripMenuItem});
+            this.almacenToolStripMenuItem.Name = "almacenToolStripMenuItem";
+            this.almacenToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.almacenToolStripMenuItem.Text = "ALMACEN";
+            // 
+            // materiasPrimasToolStripMenuItem
+            // 
+            this.materiasPrimasToolStripMenuItem.Name = "materiasPrimasToolStripMenuItem";
+            this.materiasPrimasToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.materiasPrimasToolStripMenuItem.Text = "Materias Primas";
+            this.materiasPrimasToolStripMenuItem.Click += new System.EventHandler(this.materiasPrimasToolStripMenuItem_Click);
+            // 
+            // productosToolStripMenuItem
+            // 
+            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.productosToolStripMenuItem.Text = "Productos";
+            this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
+            // 
+            // producciónToolStripMenuItem
+            // 
+            this.producciónToolStripMenuItem.Name = "producciónToolStripMenuItem";
+            this.producciónToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.producciónToolStripMenuItem.Text = "PRODUCCIÓN";
+            // 
+            // rECURSOSHUMANOSToolStripMenuItem
+            // 
+            this.rECURSOSHUMANOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.empleadosToolStripMenuItem});
+            this.rECURSOSHUMANOSToolStripMenuItem.Name = "rECURSOSHUMANOSToolStripMenuItem";
+            this.rECURSOSHUMANOSToolStripMenuItem.Size = new System.Drawing.Size(139, 20);
+            this.rECURSOSHUMANOSToolStripMenuItem.Text = "RECURSOS HUMANOS";
+            // 
             // empleadosToolStripMenuItem
             // 
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
+            // 
+            // ventasToolStripMenuItem
+            // 
+            this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.ventasToolStripMenuItem.Text = "VENTAS";
+            // 
+            // ventanasToolStripMenuItem
+            // 
+            this.ventanasToolStripMenuItem.Name = "ventanasToolStripMenuItem";
+            this.ventanasToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
+            this.ventanasToolStripMenuItem.Text = "VENTANAS";
             // 
             // MdiAdmin
             // 
@@ -200,7 +192,6 @@
         private System.Windows.Forms.ToolStripMenuItem cerrarSesiónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem almacenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem stockToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem materiasPrimasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem producciónToolStripMenuItem;

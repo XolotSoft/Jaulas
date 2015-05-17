@@ -61,6 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\BaseDatos.cs" />
+    <Compile Include="Modules\Almacen\Materias\MateriasCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Almacen\Materias\MateriasCompras.Designer.cs">
+      <DependentUpon>MateriasCompras.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\RecursosHumanos\EmpleadoEditar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,23 +106,23 @@
     </Compile>
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Classes\Limpiar.cs" />
-    <Compile Include="Modules\Almacen\Materias\MateriasPrimasIndex.cs">
+    <Compile Include="Modules\Almacen\Materias\MateriasIndex.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Almacen\Materias\MateriasPrimasIndex.Designer.cs">
-      <DependentUpon>MateriasPrimasIndex.cs</DependentUpon>
+    <Compile Include="Modules\Almacen\Materias\MateriasIndex.Designer.cs">
+      <DependentUpon>MateriasIndex.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Almacen\Materias\MateriasPrimasNuevo.cs">
+    <Compile Include="Modules\Almacen\Materias\MateriasNuevo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Almacen\Materias\MateriasPrimasNuevo.Designer.cs">
-      <DependentUpon>MateriasPrimasNuevo.cs</DependentUpon>
+    <Compile Include="Modules\Almacen\Materias\MateriasNuevo.Designer.cs">
+      <DependentUpon>MateriasNuevo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Almacen\Materias\MateriasPrimasEditar.cs">
+    <Compile Include="Modules\Almacen\Materias\MateriasEditar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Almacen\Materias\MateriasPrimasEditar.Designer.cs">
-      <DependentUpon>MateriasPrimasEditar.cs</DependentUpon>
+    <Compile Include="Modules\Almacen\Materias\MateriasEditar.Designer.cs">
+      <DependentUpon>MateriasEditar.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\Inicio\MdiUser.cs">
       <SubType>Form</SubType>
@@ -165,14 +171,17 @@
     </Compile>
     <Compile Include="Classes\Vacio.cs" />
     <Compile Include="Classes\Variables.cs" />
-    <EmbeddedResource Include="Modules\Almacen\Materias\MateriasPrimasEditar.resx">
-      <DependentUpon>MateriasPrimasEditar.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\Almacen\Materias\MateriasCompras.resx">
+      <DependentUpon>MateriasCompras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Almacen\Materias\MateriasPrimasIndex.resx">
-      <DependentUpon>MateriasPrimasIndex.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\Almacen\Materias\MateriasEditar.resx">
+      <DependentUpon>MateriasEditar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Almacen\Materias\MateriasPrimasNuevo.resx">
-      <DependentUpon>MateriasPrimasNuevo.cs</DependentUpon>
+    <EmbeddedResource Include="Modules\Almacen\Materias\MateriasIndex.resx">
+      <DependentUpon>MateriasIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Almacen\Materias\MateriasNuevo.resx">
+      <DependentUpon>MateriasNuevo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Almacen\Productos\ProductosEditar.resx">
       <DependentUpon>ProductosEditar.cs</DependentUpon>

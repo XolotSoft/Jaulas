@@ -134,6 +134,11 @@ namespace Jaulas
             return Regex.IsMatch(smail, "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$");
         }
 
+        public static bool decimales(string numero)
+        {
+            return Regex.IsMatch(numero, @"^\d+(\.\d{1,2})?$");
+        }
+
         public static void NumerosPunto(KeyPressEventArgs e)
         {
             if (Char.IsDigit(e.KeyChar))

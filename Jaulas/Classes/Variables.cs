@@ -8,7 +8,7 @@ namespace Jaulas
 {
     static class Variables
     {
-        public static string usuarioId, empleadoId;
+        public static string usuarioId, empleadoId, materiaId, productoId;
 
         public static void UsuarioId(string id)
         {
@@ -18,6 +18,16 @@ namespace Jaulas
         public static void EmpleadoId(string id)
         {
             empleadoId = id;
+        }
+
+        public static void MateriaId(string id)
+        {
+            materiaId = id;
+        }
+
+        public static void ProductoId(string id)
+        {
+            productoId = id;
         }
     }
 }
