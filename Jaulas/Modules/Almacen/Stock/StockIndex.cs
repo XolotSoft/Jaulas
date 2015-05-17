@@ -16,12 +16,27 @@ namespace Jaulas
         {
             InitializeComponent();
         }
+
+        BaseDatos datos = new BaseDatos();
         private static StockIndex frmInst = null;
+
         public static StockIndex Instancia()
         {
             if (frmInst == null || frmInst.IsDisposed == true) frmInst = new StockIndex();
             frmInst.BringToFront();
             return frmInst;
+        }
+
+        private void StockIndex_Load(object sender, EventArgs e)
+        {
+            string sql = "SELECT * FROM productos";
+            datos.buscar(sql);
+            dgvProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvProductos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvProductos.RowHeadersVisible = false;
+            dgvProductos.DataSource = datos.ds.Tables[0];
+            dgvProductos.Columns["id"].Visible = false;
+
         }
 
         private void lblCerrar_Click(object sender, EventArgs e)

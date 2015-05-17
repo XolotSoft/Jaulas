@@ -61,123 +61,150 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\BaseDatos.cs" />
-    <Compile Include="Forms\Almacen\Stock\StockIndex.cs">
+    <Compile Include="Modules\RecursosHumanos\EmpleadoEditar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Almacen\Stock\StockIndex.Designer.cs">
+    <Compile Include="Modules\RecursosHumanos\EmpleadoEditar.Designer.cs">
+      <DependentUpon>EmpleadoEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RecursosHumanos\EmpleadoIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\RecursosHumanos\EmpleadoIndex.Designer.cs">
+      <DependentUpon>EmpleadoIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RecursosHumanos\EmpleadoNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\RecursosHumanos\EmpleadoNuevo.Designer.cs">
+      <DependentUpon>EmpleadoNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Almacen\Stock\StockIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Almacen\Stock\StockIndex.Designer.cs">
       <DependentUpon>StockIndex.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Conexion.cs" />
-    <Compile Include="Forms\Inicio\Login.cs">
+    <Compile Include="Modules\Inicio\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Inicio\Login.Designer.cs">
+    <Compile Include="Modules\Inicio\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Inicio\MdiAdmin.cs">
+    <Compile Include="Modules\Inicio\MdiAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Inicio\MdiAdmin.Designer.cs">
+    <Compile Include="Modules\Inicio\MdiAdmin.Designer.cs">
       <DependentUpon>MdiAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Classes\Limpiar.cs" />
-    <Compile Include="Forms\Almacen\Materias Primas\MateriasIndex.cs">
+    <Compile Include="Modules\Almacen\Materias Primas\MateriasIndex.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Almacen\Materias Primas\MateriasIndex.Designer.cs">
+    <Compile Include="Modules\Almacen\Materias Primas\MateriasIndex.Designer.cs">
       <DependentUpon>MateriasIndex.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Almacen\Materias Primas\MateriasNuevo.cs">
+    <Compile Include="Modules\Almacen\Materias Primas\MateriasNuevo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Almacen\Materias Primas\MateriasNuevo.Designer.cs">
+    <Compile Include="Modules\Almacen\Materias Primas\MateriasNuevo.Designer.cs">
       <DependentUpon>MateriasNuevo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Almacen\Materias Primas\MateriaEditar.cs">
+    <Compile Include="Modules\Almacen\Materias Primas\MateriaEditar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Almacen\Materias Primas\MateriaEditar.Designer.cs">
+    <Compile Include="Modules\Almacen\Materias Primas\MateriaEditar.Designer.cs">
       <DependentUpon>MateriaEditar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Inicio\MdiUser.cs">
+    <Compile Include="Modules\Inicio\MdiUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Inicio\MdiUser.Designer.cs">
+    <Compile Include="Modules\Inicio\MdiUser.Designer.cs">
       <DependentUpon>MdiUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Hash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Forms\Inicio\Splash.cs">
+    <Compile Include="Modules\Inicio\Splash.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Inicio\Splash.Designer.cs">
+    <Compile Include="Modules\Inicio\Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Validar.cs" />
-    <Compile Include="Forms\Usuarios\UsuariosIndex.cs">
+    <Compile Include="Modules\Usuarios\UsuariosIndex.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Usuarios\UsuariosIndex.Designer.cs">
+    <Compile Include="Modules\Usuarios\UsuariosIndex.Designer.cs">
       <DependentUpon>UsuariosIndex.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Usuarios\UsuariosNuevo.cs">
+    <Compile Include="Modules\Usuarios\UsuariosNuevo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Usuarios\UsuariosNuevo.Designer.cs">
+    <Compile Include="Modules\Usuarios\UsuariosNuevo.Designer.cs">
       <DependentUpon>UsuariosNuevo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Usuarios\UsuarioEditar.cs">
+    <Compile Include="Modules\Usuarios\UsuarioEditar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Usuarios\UsuarioEditar.Designer.cs">
+    <Compile Include="Modules\Usuarios\UsuarioEditar.Designer.cs">
       <DependentUpon>UsuarioEditar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Almacen\Stock\StockNuevo.cs">
+    <Compile Include="Modules\Almacen\Stock\StockNuevo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Almacen\Stock\StockNuevo.Designer.cs">
+    <Compile Include="Modules\Almacen\Stock\StockNuevo.Designer.cs">
       <DependentUpon>StockNuevo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Almacen\Stock\StockEditar.cs">
+    <Compile Include="Modules\Almacen\Stock\StockEditar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Almacen\Stock\StockEditar.Designer.cs">
+    <Compile Include="Modules\Almacen\Stock\StockEditar.Designer.cs">
       <DependentUpon>StockEditar.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Vacio.cs" />
     <Compile Include="Classes\Variables.cs" />
-    <EmbeddedResource Include="Forms\Almacen\Materias Primas\MateriaEditar.resx">
+    <EmbeddedResource Include="Modules\Almacen\Materias Primas\MateriaEditar.resx">
       <DependentUpon>MateriaEditar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Almacen\Materias Primas\MateriasIndex.resx">
+    <EmbeddedResource Include="Modules\Almacen\Materias Primas\MateriasIndex.resx">
       <DependentUpon>MateriasIndex.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Almacen\Materias Primas\MateriasNuevo.resx">
+    <EmbeddedResource Include="Modules\Almacen\Materias Primas\MateriasNuevo.resx">
       <DependentUpon>MateriasNuevo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Almacen\Stock\StockEditar.resx">
+    <EmbeddedResource Include="Modules\Almacen\Stock\StockEditar.resx">
       <DependentUpon>StockEditar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Almacen\Stock\StockIndex.resx">
+    <EmbeddedResource Include="Modules\Almacen\Stock\StockIndex.resx">
       <DependentUpon>StockIndex.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Almacen\Stock\StockNuevo.resx">
+    <EmbeddedResource Include="Modules\Almacen\Stock\StockNuevo.resx">
       <DependentUpon>StockNuevo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Inicio\Login.resx">
+    <EmbeddedResource Include="Modules\Inicio\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Inicio\MdiAdmin.resx">
+    <EmbeddedResource Include="Modules\Inicio\MdiAdmin.resx">
       <DependentUpon>MdiAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Inicio\MdiUser.resx">
+    <EmbeddedResource Include="Modules\Inicio\MdiUser.resx">
       <DependentUpon>MdiUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Usuarios\UsuarioEditar.resx">
+    <EmbeddedResource Include="Modules\RecursosHumanos\EmpleadoEditar.resx">
+      <DependentUpon>EmpleadoEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\RecursosHumanos\EmpleadoIndex.resx">
+      <DependentUpon>EmpleadoIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\RecursosHumanos\EmpleadoNuevo.resx">
+      <DependentUpon>EmpleadoNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Usuarios\UsuarioEditar.resx">
       <DependentUpon>UsuarioEditar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Usuarios\UsuariosNuevo.resx">
+    <EmbeddedResource Include="Modules\Usuarios\UsuariosNuevo.resx">
       <DependentUpon>UsuariosNuevo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -190,10 +217,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Forms\Inicio\Splash.resx">
+    <EmbeddedResource Include="Modules\Inicio\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Usuarios\UsuariosIndex.resx">
+    <EmbeddedResource Include="Modules\Usuarios\UsuariosIndex.resx">
       <DependentUpon>UsuariosIndex.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -241,7 +268,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Modules\Almacen\Productos\" />
+    <Folder Include="Modules\Produccion\" />
+    <Folder Include="Modules\Ventas\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -142,6 +142,7 @@
             this.Name = "StockIndex";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AlmacenIndex";
+            this.Load += new System.EventHandler(this.StockIndex_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -29,7 +29,8 @@ namespace Jaulas
         private void UsuariosIndex_Load(object sender, EventArgs e)
         {
             BaseDatos bd = new BaseDatos();
-            bd.buscar("SELECT u.id, u.nombre AS Nombre , u.username AS Usuario, c.nombre AS Rol FROM usuarios u INNER JOIN catalogo c ON u.rol_id = c.id");
+            string sql = "SELECT u.id, u.nombre AS Nombre , u.username AS Usuario, c.nombre AS Rol FROM usuarios u INNER JOIN catalogo c ON u.rol_id = c.id";
+            bd.buscar(sql);
             dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvUsuarios.RowHeadersVisible = false;
