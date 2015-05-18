@@ -54,7 +54,7 @@
             this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(121, 40);
-            this.btnCrear.TabIndex = 21;
+            this.btnCrear.TabIndex = 3;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
@@ -138,7 +138,7 @@
             this.txbDescripción.Multiline = true;
             this.txbDescripción.Name = "txbDescripción";
             this.txbDescripción.Size = new System.Drawing.Size(209, 92);
-            this.txbDescripción.TabIndex = 1;
+            this.txbDescripción.TabIndex = 2;
             // 
             // txbModelo
             // 
@@ -160,7 +160,7 @@
             this.txbNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txbNombre.Name = "txbNombre";
             this.txbNombre.Size = new System.Drawing.Size(209, 26);
-            this.txbNombre.TabIndex = 1;
+            this.txbNombre.TabIndex = 0;
             // 
             // btnRegresar
             // 
@@ -174,7 +174,7 @@
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(121, 40);
-            this.btnRegresar.TabIndex = 31;
+            this.btnRegresar.TabIndex = 4;
             this.btnRegresar.Text = "REGRESAR";
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);

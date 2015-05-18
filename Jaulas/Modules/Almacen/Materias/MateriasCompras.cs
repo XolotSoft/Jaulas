@@ -43,7 +43,7 @@ namespace Jaulas
             {
                 if (Validar.decimales(txbCosto.Text))
                 {
-                    string sql = "INSERT INTO compras(materia_id,cantidad,costo,total,fecha)VALUES('"+cmbMateria.SelectedValue+"','"+txbCantidad.Text+"','"+txbCosto.Text+"','"+ total +"','"+dtpFecha.Text+"')";
+                    string sql = "INSERT INTO compras(materia_id,cantidad,costo,total,fecha)VALUES('"+ cmbMateria.SelectedValue+"','"+txbCantidad.Text+"','"+txbCosto.Text+"','"+ total +"','"+dtpFecha.Text+"')";
                     if (bd.insertar(sql))
                     {
                         MessageBox.Show("Se agrego el registro", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -82,7 +82,7 @@ namespace Jaulas
 
         private void txbCantidad_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Validar.Numeros(e);
+            Validar.Numeros(e);       
         }
 
         private void txbCosto_KeyPress(object sender, KeyPressEventArgs e)
@@ -92,7 +92,7 @@ namespace Jaulas
 
         private void txbCosto_Leave(object sender, EventArgs e)
         {
-            if (txbCantidad.Text == string.Empty)
+            if (txbCantidad.Text == string.Empty || txbCosto.Text == string.Empty)
             {
                 txbCantidad.Focus();
             }
