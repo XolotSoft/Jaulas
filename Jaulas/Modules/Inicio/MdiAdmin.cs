@@ -79,5 +79,21 @@ namespace Jaulas
             index.MdiParent = this;
             index.Show();
         }
+
+        private void puntoDeVentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PuntoVenta punto = null;
+            punto = PuntoVenta.Instancia();
+            punto.MdiParent = this;
+            punto.Show();
+        }
+
+        private void productosEnProcesoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProduccionPedidos produccion = null;
+            produccion = ProduccionPedidos.Instancia();
+            produccion.MdiParent = this;
+            produccion.Show();
+        }
     }
 }

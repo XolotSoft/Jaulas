@@ -21,7 +21,7 @@ namespace Jaulas
             dgvMaterias.RowHeadersVisible = false;
         }
 
-        string filtrar;
+        string filtrar, filtro;
         private static MateriasIndex frmInst = null;
         public static MateriasIndex Instancia()
         {
@@ -60,6 +60,8 @@ namespace Jaulas
 
         private void rdbStock_CheckedChanged(object sender, EventArgs e)
         {
+            filtro = "";
+            txbFiltrar.Text = "";
             if (rdbStock.Checked)
             {
                 Stock();
@@ -69,6 +71,8 @@ namespace Jaulas
 
         private void rdbCompras_CheckedChanged(object sender, EventArgs e)
         {
+            filtro = "";
+            txbFiltrar.Text = "";
             if (rdbCompras.Checked)
             {
                 Compras();
@@ -78,6 +82,8 @@ namespace Jaulas
 
         private void rdbCatalogo_CheckedChanged(object sender, EventArgs e)
         {
+            filtro = "";
+            txbFiltrar.Text = "";
             if (rdbCatalogo.Checked)
             {
                 Catalogo();
@@ -111,7 +117,7 @@ namespace Jaulas
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
-            string filtro = txbFiltrar.Text.Trim();
+            filtro = txbFiltrar.Text.Trim();
             if (rdbStock.Checked)
             {
                 filtrar = " WHERE m.nombre LIKE '%" + filtro + "%' OR m.modelo LIKE '%" + filtro + "%' OR s.cantidad LIKE '%" + filtro + "%'";
