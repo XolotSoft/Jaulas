@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Registro de generación de código/transformación de texto">
+  <MessageClass Name="Message" Label="Mensaje" Option="Mostrar mensajes informativos" />
+  <MessageClass Name="Warning" Label="Advertencia" Option="Mostrar advertencias" />
+  <MessageClass Name="Error" Label="Error" Option="Mostrar errores" />
+  <MessageClass Name="Property" Label="Propiedad" Option="Mostrar metadatos" />
+  <MessageClass Name="Diagnostic" Label="Mensaje" Option="Mostrar mensajes de diagnóstico" />
+  <Message Timestamp="2015-05-18T03:04:11" Importance="High" Text="Se inició la ingeniería inversa." />
+  <Error Timestamp="2015-05-18T03:04:12" Importance="High" Text="El proceso de ingeniería inversa de La longitud no puede ser inferior a cero.&#xD;&#xA;Nombre del parámetro: length se detuvo." />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Boolean' -  (PrimitiveType)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::Jaulas' -  (Package)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::Jaulas::MdiUser' -  (Class)  (ingeniería inversa parcial, definición no actualizada) " />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::Jaulas::MdiUser::aLMACENToolStripMenuItem' -  (Property)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::Jaulas::MdiUser::components' -  (Property)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::Jaulas::MdiUser::Dispose' -  (Operation)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::Jaulas::MdiUser::Dispose::disposing' -  (Parameter)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::Jaulas::MdiUser::iNICIOToolStripMenuItem' -  (Property)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::Jaulas::MdiUser::InitializeComponent' -  (Operation)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::Jaulas::MdiUser::MdiUser' -  (Operation)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::Jaulas::MdiUser::menuStrip1' -  (Property)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::System' -  (Package)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::System::ComponentModel' -  (Package)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::System::ComponentModel::IContainer' -  (Interface)  (ingeniería inversa parcial, definición no actualizada) " />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::System::Windows' -  (Package)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::System::Windows::Forms' -  (Package)" />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::System::Windows::Forms::MenuStrip' -  (Class)  (ingeniería inversa parcial, definición no actualizada) " />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="Diagnostic" Text="Se realizó ingeniería inversa del elemento en el modelo UML: 'Modelado::System::Windows::Forms::ToolStripMenuItem' -  (Class)  (ingeniería inversa parcial, definición no actualizada) " />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="High" Text="Se realizó ingeniería inversa total de los siguientes tipos: (0)." />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="High" Text="Se realizó ingeniería inversa parcial de los siguientes tipos: (4). Estos tipos no se incluyeron en la selección original, por lo que no se realizó ingeniería inversa de sus definiciones completas. En su lugar, esta operación superficial se limita a asegurarse de que estos tipos existen en el modelo UML porque son necesarios para describir a otros elementos por completo." />
+  <Message Timestamp="2015-05-18T03:04:12" Importance="High" Text="La operación de ingeniería inversa se completó con (1) errores y (0) advertencias." />
+</Log>
