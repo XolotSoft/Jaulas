@@ -50,16 +50,17 @@
             this.btnEditar.BackColor = System.Drawing.Color.Blue;
             this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnEditar.FlatAppearance.BorderSize = 0;
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.ForeColor = System.Drawing.Color.White;
             this.btnEditar.Location = new System.Drawing.Point(538, 333);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(121, 40);
-            this.btnEditar.TabIndex = 16;
+            this.btnEditar.TabIndex = 4;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // panel1
             // 
@@ -102,32 +103,34 @@
             this.btnEliminar.BackColor = System.Drawing.Color.Blue;
             this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Location = new System.Drawing.Point(409, 333);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(121, 40);
-            this.btnEliminar.TabIndex = 28;
+            this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnRegresar
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.Blue;
             this.btnRegresar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
             this.btnRegresar.Location = new System.Drawing.Point(280, 333);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(121, 40);
-            this.btnRegresar.TabIndex = 29;
+            this.btnRegresar.TabIndex = 6;
             this.btnRegresar.Text = "REGRESAR";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // txbDescripcion
             // 
@@ -139,7 +142,7 @@
             this.txbDescripcion.Multiline = true;
             this.txbDescripcion.Name = "txbDescripcion";
             this.txbDescripcion.Size = new System.Drawing.Size(209, 98);
-            this.txbDescripcion.TabIndex = 30;
+            this.txbDescripcion.TabIndex = 3;
             // 
             // txbModelo
             // 
@@ -149,9 +152,8 @@
             this.txbModelo.Location = new System.Drawing.Point(386, 126);
             this.txbModelo.Margin = new System.Windows.Forms.Padding(4);
             this.txbModelo.Name = "txbModelo";
-            this.txbModelo.PasswordChar = '*';
             this.txbModelo.Size = new System.Drawing.Size(209, 26);
-            this.txbModelo.TabIndex = 31;
+            this.txbModelo.TabIndex = 2;
             // 
             // txbCodigo
             // 
@@ -160,10 +162,11 @@
             this.txbCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbCodigo.Location = new System.Drawing.Point(100, 193);
             this.txbCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txbCodigo.MaxLength = 12;
             this.txbCodigo.Name = "txbCodigo";
-            this.txbCodigo.PasswordChar = '*';
             this.txbCodigo.Size = new System.Drawing.Size(209, 26);
-            this.txbCodigo.TabIndex = 32;
+            this.txbCodigo.TabIndex = 1;
+            this.txbCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbCodigo_KeyPress);
             // 
             // txbSerie
             // 
@@ -172,10 +175,11 @@
             this.txbSerie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbSerie.Location = new System.Drawing.Point(100, 126);
             this.txbSerie.Margin = new System.Windows.Forms.Padding(4);
+            this.txbSerie.MaxLength = 7;
             this.txbSerie.Name = "txbSerie";
-            this.txbSerie.PasswordChar = '*';
             this.txbSerie.Size = new System.Drawing.Size(209, 26);
-            this.txbSerie.TabIndex = 33;
+            this.txbSerie.TabIndex = 0;
+            this.txbSerie.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbSerie_KeyPress);
             // 
             // label6
             // 
@@ -221,7 +225,7 @@
             this.label3.TabIndex = 34;
             this.label3.Text = "Serie";
             // 
-            // ProductosTerminadosEditar
+            // ProductosEditar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -242,9 +246,10 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ProductosTerminadosEditar";
+            this.Name = "ProductosEditar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StockEditar";
+            this.Load += new System.EventHandler(this.ProductosEditar_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

@@ -49,7 +49,7 @@
             this.btnCrear.BackColor = System.Drawing.Color.Blue;
             this.btnCrear.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCrear.FlatAppearance.BorderSize = 0;
-            this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrear.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrear.ForeColor = System.Drawing.Color.White;
             this.btnCrear.Location = new System.Drawing.Point(538, 333);
@@ -59,6 +59,7 @@
             this.btnCrear.TabIndex = 16;
             this.btnCrear.Text = "CREAR";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // panel1
             // 
@@ -171,8 +172,8 @@
             this.txbCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbCodigo.Location = new System.Drawing.Point(100, 193);
             this.txbCodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.txbCodigo.MaxLength = 12;
             this.txbCodigo.Name = "txbCodigo";
-            this.txbCodigo.PasswordChar = '*';
             this.txbCodigo.Size = new System.Drawing.Size(209, 26);
             this.txbCodigo.TabIndex = 1;
             // 
@@ -183,8 +184,8 @@
             this.txbSerie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbSerie.Location = new System.Drawing.Point(100, 126);
             this.txbSerie.Margin = new System.Windows.Forms.Padding(4);
+            this.txbSerie.MaxLength = 7;
             this.txbSerie.Name = "txbSerie";
-            this.txbSerie.PasswordChar = '*';
             this.txbSerie.Size = new System.Drawing.Size(209, 26);
             this.txbSerie.TabIndex = 1;
             // 
@@ -193,7 +194,7 @@
             this.btnRegresar.BackColor = System.Drawing.Color.Blue;
             this.btnRegresar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
             this.btnRegresar.Location = new System.Drawing.Point(409, 333);
@@ -203,8 +204,9 @@
             this.btnRegresar.TabIndex = 27;
             this.btnRegresar.Text = "REGRESAR";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
-            // ProductosTerminadosNuevo
+            // ProductosNuevo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -224,7 +226,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ProductosTerminadosNuevo";
+            this.Name = "ProductosNuevo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StockNuevo";
             this.panel1.ResumeLayout(false);
