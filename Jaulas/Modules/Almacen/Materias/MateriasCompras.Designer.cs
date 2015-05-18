@@ -41,6 +41,8 @@
             this.btnRegresar = new System.Windows.Forms.Button();
             this.cmbMateria = new System.Windows.Forms.ComboBox();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.txbTotal = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,8 +56,9 @@
             this.txbCosto.MaxLength = 9;
             this.txbCosto.Name = "txbCosto";
             this.txbCosto.Size = new System.Drawing.Size(209, 26);
-            this.txbCosto.TabIndex = 33;
+            this.txbCosto.TabIndex = 3;
             this.txbCosto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbCosto_KeyPress);
+            this.txbCosto.Leave += new System.EventHandler(this.txbCosto_Leave);
             // 
             // txbCantidad
             // 
@@ -67,7 +70,7 @@
             this.txbCantidad.MaxLength = 5;
             this.txbCantidad.Name = "txbCantidad";
             this.txbCantidad.Size = new System.Drawing.Size(209, 26);
-            this.txbCantidad.TabIndex = 34;
+            this.txbCantidad.TabIndex = 2;
             this.txbCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbCantidad_KeyPress);
             // 
             // label6
@@ -126,7 +129,7 @@
             this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(121, 40);
-            this.btnCrear.TabIndex = 38;
+            this.btnCrear.TabIndex = 5;
             this.btnCrear.Text = "AGREGAR";
             this.btnCrear.UseVisualStyleBackColor = false;
             this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
@@ -179,7 +182,7 @@
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(121, 40);
-            this.btnRegresar.TabIndex = 44;
+            this.btnRegresar.TabIndex = 6;
             this.btnRegresar.Text = "REGRESAR";
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
@@ -191,7 +194,7 @@
             this.cmbMateria.Location = new System.Drawing.Point(100, 127);
             this.cmbMateria.Name = "cmbMateria";
             this.cmbMateria.Size = new System.Drawing.Size(209, 24);
-            this.cmbMateria.TabIndex = 45;
+            this.cmbMateria.TabIndex = 0;
             // 
             // dtpFecha
             // 
@@ -199,7 +202,31 @@
             this.dtpFecha.Location = new System.Drawing.Point(100, 193);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(209, 22);
-            this.dtpFecha.TabIndex = 46;
+            this.dtpFecha.TabIndex = 1;
+            // 
+            // txbTotal
+            // 
+            this.txbTotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTotal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbTotal.Location = new System.Drawing.Point(386, 260);
+            this.txbTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txbTotal.MaxLength = 9;
+            this.txbTotal.Name = "txbTotal";
+            this.txbTotal.ReadOnly = true;
+            this.txbTotal.Size = new System.Drawing.Size(209, 26);
+            this.txbTotal.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(383, 239);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 18);
+            this.label4.TabIndex = 48;
+            this.label4.Text = "Total";
             // 
             // MateriasCompras
             // 
@@ -207,6 +234,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(700, 400);
+            this.Controls.Add(this.txbTotal);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.cmbMateria);
             this.Controls.Add(this.btnRegresar);
@@ -247,5 +276,7 @@
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.ComboBox cmbMateria;
         private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.TextBox txbTotal;
+        private System.Windows.Forms.Label label4;
     }
 }

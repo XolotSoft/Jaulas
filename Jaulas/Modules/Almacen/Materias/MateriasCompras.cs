@@ -19,6 +19,7 @@ namespace Jaulas
             dtpFecha.CustomFormat = "yyyy-MM-dd";
         }
 
+        string total;
         BaseDatos bd = new BaseDatos();
         private static MateriasCompras frmInst = null;
         public static MateriasCompras Instancia()
@@ -42,7 +43,7 @@ namespace Jaulas
             {
                 if (Validar.decimales(txbCosto.Text))
                 {
-                    string sql = "INSERT INTO compras(materia_id,cantidad,costo,fecha)VALUES('"+cmbMateria.SelectedValue+"','"+txbCantidad.Text+"','"+txbCosto.Text+"','"+dtpFecha.Text+"')";
+                    string sql = "INSERT INTO compras(materia_id,cantidad,costo,total,fecha)VALUES('"+cmbMateria.SelectedValue+"','"+txbCantidad.Text+"','"+txbCosto.Text+"','"+ total +"','"+dtpFecha.Text+"')";
                     if (bd.insertar(sql))
                     {
                         MessageBox.Show("Se agrego el registro", "Correcto", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -87,6 +88,19 @@ namespace Jaulas
         private void txbCosto_KeyPress(object sender, KeyPressEventArgs e)
         {
             Validar.NumerosPunto(e);
+        }
+
+        private void txbCosto_Leave(object sender, EventArgs e)
+        {
+            if (txbCantidad.Text == string.Empty)
+            {
+                txbCantidad.Focus();
+            }
+            else
+            {
+                total = Convert.ToString(Math.Round((Convert.ToDouble(txbCantidad.Text) * Convert.ToDouble(txbCosto.Text)),2));
+                txbTotal.Text = total;
+            }
         }
     }
 }

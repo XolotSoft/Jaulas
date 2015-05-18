@@ -27,11 +27,6 @@ namespace Jaulas
             return frmInst;
         }
 
-        private void lblCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnCrear_Click(object sender, EventArgs e)
         {
             string sql = "INSERT INTO materias(nombre,modelo,descripcion)VALUES('"+txbNombre.Text.Trim()+"','"+txbModelo.Text.Trim()+"','"+txbDescripción.Text.Trim()+"')";
@@ -49,6 +44,16 @@ namespace Jaulas
             }
         }
 
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            Index();
+        }
+
+        private void lblCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void Index()
         {
             MateriasIndex editar = null;
@@ -56,11 +61,6 @@ namespace Jaulas
             editar.MdiParent = MdiAdmin.ActiveForm;
             editar.Show();
             this.Close();
-        }
-
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            Index();
         }
     }
 }
