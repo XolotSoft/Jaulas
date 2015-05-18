@@ -138,6 +138,7 @@
     <Compile Include="Forms\Almacen\Stock\StockEditar.Designer.cs">
       <DependentUpon>StockEditar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\Vacio.cs" />
     <EmbeddedResource Include="Forms\Almacen\Materias Primas\MateriaEditar.resx">
       <DependentUpon>MateriaEditar.cs</DependentUpon>
     </EmbeddedResource>

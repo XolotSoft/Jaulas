@@ -33,15 +33,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCrear = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txbPass = new System.Windows.Forms.TextBox();
+            this.txbNombre = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbUsuario = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbPass = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txbConfirmar = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -111,11 +111,51 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Controls.Add(this.txbPass);
+            this.panel3.Controls.Add(this.txbNombre);
             this.panel3.Location = new System.Drawing.Point(98, 145);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(218, 34);
             this.panel3.TabIndex = 8;
+            // 
+            // txbNombre
+            // 
+            this.txbNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbNombre.Location = new System.Drawing.Point(4, 4);
+            this.txbNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txbNombre.Name = "txbNombre";
+            this.txbNombre.Size = new System.Drawing.Size(209, 26);
+            this.txbNombre.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.txbUsuario);
+            this.panel2.Location = new System.Drawing.Point(98, 212);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(218, 34);
+            this.panel2.TabIndex = 9;
+            // 
+            // txbUsuario
+            // 
+            this.txbUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbUsuario.Location = new System.Drawing.Point(4, 4);
+            this.txbUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txbUsuario.Name = "txbUsuario";
+            this.txbUsuario.Size = new System.Drawing.Size(209, 26);
+            this.txbUsuario.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Gray;
+            this.panel4.Controls.Add(this.txbPass);
+            this.panel4.Location = new System.Drawing.Point(384, 145);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(218, 34);
+            this.panel4.TabIndex = 9;
             // 
             // txbPass
             // 
@@ -129,85 +169,46 @@
             this.txbPass.Size = new System.Drawing.Size(209, 26);
             this.txbPass.TabIndex = 1;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Location = new System.Drawing.Point(98, 212);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(218, 34);
-            this.panel2.TabIndex = 9;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox1.Location = new System.Drawing.Point(4, 4);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(209, 26);
-            this.textBox1.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Gray;
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Location = new System.Drawing.Point(384, 145);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(218, 34);
-            this.panel4.TabIndex = 9;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox2.Location = new System.Drawing.Point(4, 4);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(209, 26);
-            this.textBox2.TabIndex = 1;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Gray;
-            this.panel5.Controls.Add(this.textBox3);
+            this.panel5.Controls.Add(this.txbConfirmar);
             this.panel5.Location = new System.Drawing.Point(384, 212);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(218, 34);
             this.panel5.TabIndex = 9;
             // 
-            // textBox3
+            // txbConfirmar
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox3.Location = new System.Drawing.Point(4, 4);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(209, 26);
-            this.textBox3.TabIndex = 1;
+            this.txbConfirmar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbConfirmar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbConfirmar.Location = new System.Drawing.Point(4, 4);
+            this.txbConfirmar.Margin = new System.Windows.Forms.Padding(4);
+            this.txbConfirmar.Name = "txbConfirmar";
+            this.txbConfirmar.PasswordChar = '*';
+            this.txbConfirmar.Size = new System.Drawing.Size(209, 26);
+            this.txbConfirmar.TabIndex = 1;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Gray;
-            this.panel6.Controls.Add(this.comboBox1);
+            this.panel6.Controls.Add(this.cmbTipo);
             this.panel6.Location = new System.Drawing.Point(98, 281);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(218, 34);
             this.panel6.TabIndex = 9;
             // 
-            // comboBox1
+            // cmbTipo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(4, 5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(209, 24);
-            this.comboBox1.TabIndex = 0;
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "Administrador",
+            "Usuario"});
+            this.cmbTipo.Location = new System.Drawing.Point(4, 5);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(209, 24);
+            this.cmbTipo.TabIndex = 0;
             // 
             // label3
             // 
@@ -311,15 +312,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txbPass;
+        private System.Windows.Forms.TextBox txbNombre;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbUsuario;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txbPass;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txbConfirmar;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbTipo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;

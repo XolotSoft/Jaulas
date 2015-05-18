@@ -38,5 +38,16 @@ namespace Jaulas
             this.Close();
         }
 
+        private void UsuariosIndex_Load(object sender, EventArgs e)
+        {
+            BaseDatos bd = new BaseDatos();
+            bd.buscar("SELECT id, nombre AS Nombre ,username AS Usuario, tipo AS Tipo FROM usuarios");
+            dgvUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvUsuarios.RowHeadersVisible = false;
+            dgvUsuarios.DataSource = bd.ds.Tables[0];
+            dgvUsuarios.Columns["id"].Visible = false;
+        }
+
     }
 }

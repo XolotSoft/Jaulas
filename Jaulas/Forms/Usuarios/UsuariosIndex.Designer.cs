@@ -142,6 +142,7 @@
             this.Name = "UsuariosIndex";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UsuariosIndex";
+            this.Load += new System.EventHandler(this.UsuariosIndex_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
