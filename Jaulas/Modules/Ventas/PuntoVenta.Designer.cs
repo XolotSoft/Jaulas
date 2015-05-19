@@ -80,6 +80,7 @@
             this.cmbArticulo.Name = "cmbArticulo";
             this.cmbArticulo.Size = new System.Drawing.Size(209, 24);
             this.cmbArticulo.TabIndex = 49;
+            this.cmbArticulo.SelectionChangeCommitted += new System.EventHandler(this.cmbArticulo_SelectionChangeCommitted);
             // 
             // txbCantidad
             // 
@@ -170,9 +171,14 @@
             // 
             // dgvDetalle
             // 
+            this.dgvDetalle.AllowUserToAddRows = false;
+            this.dgvDetalle.AllowUserToDeleteRows = false;
+            this.dgvDetalle.AllowUserToResizeColumns = false;
+            this.dgvDetalle.AllowUserToResizeRows = false;
             this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalle.Location = new System.Drawing.Point(39, 183);
             this.dgvDetalle.Name = "dgvDetalle";
+            this.dgvDetalle.ReadOnly = true;
             this.dgvDetalle.Size = new System.Drawing.Size(468, 176);
             this.dgvDetalle.TabIndex = 62;
             // 

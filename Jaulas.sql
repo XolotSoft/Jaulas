@@ -113,6 +113,11 @@ id int IDENTITY NOT NULL PRIMARY KEY,
 producto_id int,
 cantidad int,
 fecha date,
+estado_id int,
+CONSTRAINT pedido_estado
+FOREIGN KEY (estado_id)
+REFERENCES catalogo(id)
+ON DELETE CASCADE,
 CONSTRAINT pedido_producto
 FOREIGN KEY (producto_id)
 REFERENCES productos(id)
@@ -121,17 +126,21 @@ GO
 CREATE TABLE produccion(
 id int IDENTITY NOT NULL PRIMARY KEY,
 producto_id int,
-cantidad int,
+pedido_id int,
 inicio date,
 termino date,
 empleado_id int,
-CONSTRAINT produccion_empleado
-FOREIGN KEY (empleado_id)
-REFERENCES empleados(id)
-ON DELETE CASCADE,
 CONSTRAINT produccion_producto
 FOREIGN KEY (producto_id)
 REFERENCES productos(id)
+ON DELETE CASCADE,
+CONSTRAINT produccion_pedido
+FOREIGN KEY (pedido_id)
+REFERENCES pedidos(id)
+ON DELETE NO ACTION,
+CONSTRAINT produccion_empleado
+FOREIGN KEY (empleado_id)
+REFERENCES empleados(id)
 ON DELETE CASCADE);
 GO
 CREATE TRIGGER compras_stock

@@ -95,5 +95,13 @@ namespace Jaulas
             produccion.MdiParent = this;
             produccion.Show();
         }
+
+        private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pedidos produccion = null;
+            produccion = Pedidos.Instancia();
+            produccion.MdiParent = this;
+            produccion.Show();
+        }
     }
 }
