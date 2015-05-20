@@ -84,6 +84,56 @@ FOREIGN KEY (materia_id)
 REFERENCES materias(id)
 ON DELETE CASCADE);
 GO
+CREATE TABLE ventas(
+id int IDENTITY NOT NULL PRIMARY KEY,
+total decimal(9,22),
+fecha date,
+empleado_id int,
+CONSTRAINT venta_empleado
+FOREIGN KEY (empleado_id)
+REFERENCES empleados(id)
+ON DELETE CASCADE);
+GO
+CREATE TABLE detalle_ventas(
+id int IDENTITY NOT NULL PRIMARY KEY,
+producto_id int,
+cantidad int,
+venta_id int,
+CONSTRAINT detalle_producto
+FOREIGN KEY (producto_id)
+REFERENCES productos(id)
+ON DELETE CASCADE,
+CONSTRAINT detalle_venta
+FOREIGN KEY (venta_id)
+REFERENCES ventas(id)
+ON DELETE CASCADE);
+GO
+CREATE TABLE pedidos(
+id int IDENTITY NOT NULL PRIMARY KEY,
+producto_id int,
+cantidad int,
+fecha date,
+CONSTRAINT pedido_producto
+FOREIGN KEY (producto_id)
+REFERENCES productos(id)
+ON DELETE CASCADE);
+GO
+CREATE TABLE produccion(
+id int IDENTITY NOT NULL PRIMARY KEY,
+producto_id int,
+cantidad int,
+inicio date,
+termino date,
+empleado_id int,
+CONSTRAINT produccion_empleado
+FOREIGN KEY (empleado_id)
+REFERENCES empleados(id)
+ON DELETE CASCADE,
+CONSTRAINT produccion_producto
+FOREIGN KEY (producto_id)
+REFERENCES productos(id)
+ON DELETE CASCADE);
+GO
 CREATE TRIGGER compras_stock
 ON compras
 AFTER INSERT

@@ -58,6 +58,7 @@
             this.btnFiltrar.TabIndex = 39;
             this.btnFiltrar.Text = "Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = false;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
             // txbFiltrar
             // 
@@ -77,6 +78,7 @@
             this.rdbProduccion.TabStop = true;
             this.rdbProduccion.Text = "en Producción";
             this.rdbProduccion.UseVisualStyleBackColor = true;
+            this.rdbProduccion.CheckedChanged += new System.EventHandler(this.rdbProduccion_CheckedChanged);
             // 
             // label3
             // 
@@ -99,6 +101,7 @@
             this.rdbPedidos.TabStop = true;
             this.rdbPedidos.Text = "Pedidos";
             this.rdbPedidos.UseVisualStyleBackColor = true;
+            this.rdbPedidos.CheckedChanged += new System.EventHandler(this.rdbPedidos_CheckedChanged);
             // 
             // lblTitulo
             // 
@@ -162,6 +165,7 @@
             this.lblCerrar.Size = new System.Drawing.Size(31, 29);
             this.lblCerrar.TabIndex = 1;
             this.lblCerrar.Text = "X";
+            this.lblCerrar.Click += new System.EventHandler(this.lblCerrar_Click);
             // 
             // label1
             // 
@@ -191,10 +195,11 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProduccionPedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProduccionPedidos";
+            this.Load += new System.EventHandler(this.ProduccionPedidos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -17,13 +17,14 @@ namespace Jaulas
             InitializeComponent();
             tiempo.Enabled = true;
         }
+
         int i;
         Login login = new Login();
 
         private void tiempo_Tick(object sender, EventArgs e)
         {
             i += 2;
-            if(i==50)
+            if(i==100)
             {
                 login.Show();
                 this.Hide();

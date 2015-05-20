@@ -130,6 +130,7 @@
             this.btnAgregar.TabIndex = 54;
             this.btnAgregar.Text = "AGREGAR";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // panel1
             // 
@@ -154,6 +155,7 @@
             this.lblCerrar.Size = new System.Drawing.Size(31, 29);
             this.lblCerrar.TabIndex = 1;
             this.lblCerrar.Text = "X";
+            this.lblCerrar.Click += new System.EventHandler(this.lblCerrar_Click);
             // 
             // label1
             // 
@@ -263,6 +265,7 @@
             this.Name = "PuntoVenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PuntoVenta";
+            this.Load += new System.EventHandler(this.PuntoVenta_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();

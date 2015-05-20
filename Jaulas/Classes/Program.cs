@@ -16,7 +16,7 @@ namespace Jaulas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MdiAdmin());
+            Application.Run(new Splash());
         }
     }
 }
