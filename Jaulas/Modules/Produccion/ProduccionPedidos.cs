@@ -40,7 +40,7 @@ namespace Jaulas
         private void Pedidos()
         {
             BaseDatos pedidos = new BaseDatos();
-            string sql = "SELECT * FROM pedidos " + filtrar;
+            string sql = "SELECT d.modelo AS Producto, p.cantidad AS Cantidad, p.fecha AS Fecha, c.nombre AS Etapa FROM pedidos p INNER JOIN productos d ON p.producto_id = d.id INNER JOIN catalogo c ON p.estado_id = c.id " + filtrar;
             pedidos.buscar(sql);
             dgvProductos.DataSource = pedidos.ds.Tables[0];
         }

@@ -63,9 +63,9 @@
             // 
             this.cmbArticulo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbArticulo.FormattingEnabled = true;
-            this.cmbArticulo.Location = new System.Drawing.Point(456, 155);
+            this.cmbArticulo.Location = new System.Drawing.Point(501, 155);
             this.cmbArticulo.Name = "cmbArticulo";
-            this.cmbArticulo.Size = new System.Drawing.Size(209, 24);
+            this.cmbArticulo.Size = new System.Drawing.Size(164, 24);
             this.cmbArticulo.TabIndex = 0;
             // 
             // label3
@@ -73,7 +73,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(453, 133);
+            this.label3.Location = new System.Drawing.Point(498, 133);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 18);
             this.label3.TabIndex = 73;
@@ -120,11 +120,11 @@
             this.txbCantidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbCantidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbCantidad.Location = new System.Drawing.Point(456, 231);
+            this.txbCantidad.Location = new System.Drawing.Point(501, 231);
             this.txbCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txbCantidad.MaxLength = 3;
             this.txbCantidad.Name = "txbCantidad";
-            this.txbCantidad.Size = new System.Drawing.Size(209, 26);
+            this.txbCantidad.Size = new System.Drawing.Size(164, 26);
             this.txbCantidad.TabIndex = 1;
             // 
             // label5
@@ -132,7 +132,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(453, 209);
+            this.label5.Location = new System.Drawing.Point(498, 209);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 18);
             this.label5.TabIndex = 61;
@@ -148,7 +148,7 @@
             this.dgvPedidos.Location = new System.Drawing.Point(39, 134);
             this.dgvPedidos.Name = "dgvPedidos";
             this.dgvPedidos.ReadOnly = true;
-            this.dgvPedidos.Size = new System.Drawing.Size(391, 225);
+            this.dgvPedidos.Size = new System.Drawing.Size(434, 225);
             this.dgvPedidos.TabIndex = 82;
             // 
             // label2
@@ -178,7 +178,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Pedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedidos";
